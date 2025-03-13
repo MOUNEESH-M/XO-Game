@@ -94,11 +94,8 @@
         }
         
         
-        if(count==9){
-            alert("GAME DRAW")
-            reset()
-        }
-        else if((objec(0)!=''&&objec(1)!=''&&objec(2)!='')&&(objec(0)===objec(1)&&objec(1)==objec(2))){
+       
+        if((objec(0)!=''&&objec(1)!=''&&objec(2)!='')&&(objec(0)===objec(1)&&objec(1)==objec(2))){
             alert(`${ele} won`)
             reset()
         }
@@ -128,6 +125,10 @@
         }
         else if((objec(2)!=''&&objec(4)!=''&&objec(6)!='')&&(objec(2)===objec(4)&&objec(4)==objec(6))){
             alert(`${ele} won`)
+            reset()
+        }
+         else if(count==9){
+            alert("GAME DRAW")
             reset()
         }
         
